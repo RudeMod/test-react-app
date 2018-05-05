@@ -77,7 +77,8 @@ class ModalComponent extends Component {
       Структура номеров
       <ClearIcon 
         style={styles.pointerFloatRight}
-        onClick={this.onCloseHandler}/>
+        onClick={this.onCloseHandler}
+      />
     </div>
   );
   
@@ -97,13 +98,13 @@ class ModalComponent extends Component {
   return (
     <div>
       <Dialog
-          title={this.modalAppBar}
-          actions={actions}
-          actionsContainerStyle={styles.modalActionButtons}
-          bodyStyle={styles.modalBody}
-          modal={true}
-          open={this.props.open}
-          autoScrollBodyContent={true}
+        title={this.modalAppBar}
+        actions={actions}
+        actionsContainerStyle={styles.modalActionButtons}
+        bodyStyle={styles.modalBody}
+        modal={true}
+        open={this.props.open}
+        autoScrollBodyContent={true}
       >
         <div style={styles.modalTableBlock}>
           <Table selectable={false}>
