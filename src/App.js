@@ -6,26 +6,26 @@ import ModalComponent from './ModalComponent';
 
 
 class App extends Component {
-	state = {
+  state = {
     modalOpen: false,
-		modalParams:[],
+    modalParams:[],
   };
-	
-	handleOpen = (passedParams) => {
-		if (!passedParams) {
-			this.setState({modalParams: passedParams})
-		}
+  
+  handleOpen = (passedParams) => {
+    if (!passedParams) {
+      this.setState({modalParams: passedParams})
+    }
     this.setState({modalOpen: !this.state.modalOpen});
   };
-	
-	render() {
-		return(
-			<MuiThemeProvider>
-				<RaisedButton label="Dialog" onClick={this.handleOpen} />
-				<ModalComponent openControl={this.handleOpen} open={this.state.modalOpen}/>
-			</MuiThemeProvider>
-		)
-	}
+  
+  render() {
+    return(
+      <MuiThemeProvider>
+        <RaisedButton label="Dialog" onClick={this.handleOpen} />
+        <ModalComponent openControl={this.handleOpen} open={this.state.modalOpen}/>
+      </MuiThemeProvider>
+    )
+  }
 };
 
 export default App;
