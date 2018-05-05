@@ -41,10 +41,7 @@ class ModalComponent extends Component {
   
   state={
     tableData:[
-      { sel: 1, num: '1',},
-      { sel: 1, num: '1',},
-      { sel: 2, num: '2',},
-      { sel: 3, num: '2',},
+      { sel: 1, num: '',},
     ],
   };
   
