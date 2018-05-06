@@ -1,6 +1,6 @@
 # test-react-app
 
-Необходимые prorps:
+Необходимые props:
 
 openControl - обработчик открытия/закрытия окна 
 
